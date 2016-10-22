@@ -30,6 +30,11 @@ angular
         controller: 'PollingCtrl',
         controllerAs: 'polling'
       })
+      .when('/newSession', {
+        templateUrl: 'views/newsession.html',
+        controller: 'NewsessionCtrl',
+        controllerAs: 'newSession'
+      })
       .otherwise({
         redirectTo: '/'
       });
