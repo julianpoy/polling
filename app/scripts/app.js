@@ -25,6 +25,21 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/polling/:id', {
+        templateUrl: 'views/polling.html',
+        controller: 'PollingCtrl',
+        controllerAs: 'polling'
+      })
+      .when('/newSession', {
+        templateUrl: 'views/newsession.html',
+        controller: 'NewsessionCtrl',
+        controllerAs: 'newSession'
+      })
+      .when('/sessionCtl', {
+        templateUrl: 'views/sessionctl.html',
+        controller: 'SessionctlCtrl',
+        controllerAs: 'sessionCtl'
+      })
       .otherwise({
         redirectTo: '/'
       });
