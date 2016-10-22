@@ -25,6 +25,11 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/polling/:id', {
+        templateUrl: 'views/polling.html',
+        controller: 'PollingCtrl',
+        controllerAs: 'polling'
+      })
       .otherwise({
         redirectTo: '/'
       });
